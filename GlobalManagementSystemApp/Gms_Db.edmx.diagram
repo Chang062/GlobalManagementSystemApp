@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="181fdd3bbf854f57bd82df381e40389a" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="Gms_DbModel.Brand" Width="1.5" PointX="5.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gms_DbModel.Courier" Width="1.5" PointX="7.5" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gms_DbModel.Customer" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gms_DbModel.Delivery" Width="1.5" PointX="9.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gms_DbModel.Inventory" Width="1.5" PointX="4.125" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gms_DbModel.Invoice" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gms_DbModel.Product_details" Width="1.5" PointX="7.5" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gms_DbModel.Supplier" Width="1.5" PointX="1.25" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gms_DbModel.sysdiagram" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="Gms_DbModel.Transaction_info" Width="1.5" PointX="7.5" PointY="3.875" IsExpanded="true" />
+        <AssociationConnector Association="Gms_DbModel.FK__Product_d__Brand__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="Gms_DbModel.FK__Delivery__Courie__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="Gms_DbModel.FK__Transacti__Custo__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="Gms_DbModel.FK__Delivery__Transa__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="Gms_DbModel.FK__Inventory__Produ__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="Gms_DbModel.FK__Invoice__Product__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="Gms_DbModel.FK__Invoice__Transac__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="Gms_DbModel.FK_Inventory_Inventory" />
+        <EntityTypeShape EntityType="Gms_DbModel.Role" Width="1.5" PointX="10.375" PointY="10.125" />
+        <EntityTypeShape EntityType="Gms_DbModel.UserRole" Width="1.5" PointX="12.625" PointY="9.875" />
+        <EntityTypeShape EntityType="Gms_DbModel.User" Width="1.5" PointX="10.375" PointY="12.875" />
+        <AssociationConnector Association="Gms_DbModel.FK_UserRole_Roles" />
+        <AssociationConnector Association="Gms_DbModel.FK_UserRole_Users" />
+        <EntityTypeShape EntityType="Gms_DbModel.Parish" Width="1.5" PointX="2.5" PointY="8.125" />
+        <AssociationConnector Association="Gms_DbModel.FK_Customer_Parish" />
+        <AssociationConnector Association="Gms_DbModel.FK_Supplier_Parish" />
+        <EntityTypeShape EntityType="Gms_DbModel.Transactions_View" Width="3" PointX="0.75" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
