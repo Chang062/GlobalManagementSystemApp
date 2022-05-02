@@ -415,6 +415,7 @@
       <LastGenOutput>Gms_Db.cs</LastGenOutput>
     </Content>
     <Content Include="Resources\Notify.ico" />
+    <None Include="Resources\transfer-hd.png" />
     <None Include="Resources\Lock.png" />
     <None Include="Resources\usrlogin.png" />
     <None Include="Resources\userloginicon.png" />

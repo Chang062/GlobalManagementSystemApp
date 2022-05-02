@@ -152,7 +152,12 @@ namespace GlobalManagementSystemApp
             customerMw.ShowDialog();
         }
 
-               private void lbSalesHistory_Click(object sender, EventArgs e)
+        private void lbSalesHistory_Click(object sender, EventArgs e)
+        {
+            var salesHistory = new Transactions();
+            salesHistory.ShowDialog();
+        }
+        private void pbSalesHistory_Click(object sender, EventArgs e)
         {
             var salesHistory = new Transactions();
             salesHistory.ShowDialog();
@@ -207,6 +212,7 @@ namespace GlobalManagementSystemApp
             }
         }
 
+       
     }
     public class gradientPanel : Panel
     {

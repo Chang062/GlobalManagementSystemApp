@@ -32,25 +32,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.slideShow = new System.Windows.Forms.Timer(this.components);
             this.gpTopPanel = new GlobalManagementSystemApp.gradientPanel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.lbAccountType = new System.Windows.Forms.Label();
             this.lbUserName = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pbuser = new System.Windows.Forms.PictureBox();
-            this.pbNotificationIcon = new System.Windows.Forms.PictureBox();
-            this.pbMessageIcon = new System.Windows.Forms.PictureBox();
             this.gpLeftPanel = new GlobalManagementSystemApp.gradientPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.lbManageUser = new System.Windows.Forms.Label();
             this.lbCustomer = new System.Windows.Forms.Label();
             this.lbSalesHistory = new System.Windows.Forms.Label();
             this.lbInventory = new System.Windows.Forms.Label();
-            this.pbCompanyLogo = new System.Windows.Forms.PictureBox();
-            this.pbLogOut = new System.Windows.Forms.PictureBox();
-            this.pbManageUser = new System.Windows.Forms.PictureBox();
-            this.pbCustomers = new System.Windows.Forms.PictureBox();
-            this.pbInventory = new System.Windows.Forms.PictureBox();
+            this.notification = new System.Windows.Forms.NotifyIcon(this.components);
             this.gpCentrePanel = new GlobalManagementSystemApp.gradientPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -71,19 +63,19 @@
             this.salesLabel = new System.Windows.Forms.Label();
             this.pbSlideShow = new System.Windows.Forms.PictureBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.notification = new System.Windows.Forms.NotifyIcon(this.components);
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pbuser = new System.Windows.Forms.PictureBox();
+            this.pbLogOut = new System.Windows.Forms.PictureBox();
+            this.pbNotificationIcon = new System.Windows.Forms.PictureBox();
+            this.pbMessageIcon = new System.Windows.Forms.PictureBox();
+            this.pbCompanyLogo = new System.Windows.Forms.PictureBox();
             this.pbLogOut2 = new System.Windows.Forms.PictureBox();
+            this.pbManageUser = new System.Windows.Forms.PictureBox();
+            this.pbCustomers = new System.Windows.Forms.PictureBox();
+            this.pbInventory = new System.Windows.Forms.PictureBox();
+            this.pbSalesHistory = new System.Windows.Forms.PictureBox();
             this.gpTopPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbuser)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNotificationIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMessageIcon)).BeginInit();
             this.gpLeftPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCompanyLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogOut)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbManageUser)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCustomers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbInventory)).BeginInit();
             this.gpCentrePanel.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -94,7 +86,17 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlideShow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbuser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogOut)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNotificationIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMessageIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCompanyLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogOut2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbManageUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCustomers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbInventory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSalesHistory)).BeginInit();
             this.SuspendLayout();
             // 
             // slideShow
@@ -122,17 +124,6 @@
             this.gpTopPanel.Size = new System.Drawing.Size(1330, 100);
             this.gpTopPanel.TabIndex = 1;
             this.gpTopPanel.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(172)))), ((int)(((byte)(226)))));
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::GlobalManagementSystemApp.Properties.Resources._26_268998_link_to_manage_travel_problem_solving_skills_icon;
-            this.pictureBox6.Location = new System.Drawing.Point(137, 46);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(77, 50);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
             // 
             // lbAccountType
             // 
@@ -180,41 +171,6 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "System";
             // 
-            // pbuser
-            // 
-            this.pbuser.BackColor = System.Drawing.Color.Transparent;
-            this.pbuser.Image = global::GlobalManagementSystemApp.Properties.Resources.user;
-            this.pbuser.Location = new System.Drawing.Point(947, 12);
-            this.pbuser.Name = "pbuser";
-            this.pbuser.Size = new System.Drawing.Size(121, 84);
-            this.pbuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbuser.TabIndex = 0;
-            this.pbuser.TabStop = false;
-            // 
-            // pbNotificationIcon
-            // 
-            this.pbNotificationIcon.BackColor = System.Drawing.Color.Transparent;
-            this.pbNotificationIcon.Image = global::GlobalManagementSystemApp.Properties.Resources.notification1;
-            this.pbNotificationIcon.Location = new System.Drawing.Point(815, 27);
-            this.pbNotificationIcon.Name = "pbNotificationIcon";
-            this.pbNotificationIcon.Size = new System.Drawing.Size(77, 50);
-            this.pbNotificationIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbNotificationIcon.TabIndex = 0;
-            this.pbNotificationIcon.TabStop = false;
-            this.pbNotificationIcon.Click += new System.EventHandler(this.pbNotificationIcon_Click);
-            // 
-            // pbMessageIcon
-            // 
-            this.pbMessageIcon.BackColor = System.Drawing.Color.Transparent;
-            this.pbMessageIcon.Image = global::GlobalManagementSystemApp.Properties.Resources.Message1;
-            this.pbMessageIcon.Location = new System.Drawing.Point(668, 27);
-            this.pbMessageIcon.Name = "pbMessageIcon";
-            this.pbMessageIcon.Size = new System.Drawing.Size(77, 50);
-            this.pbMessageIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbMessageIcon.TabIndex = 0;
-            this.pbMessageIcon.TabStop = false;
-            this.pbMessageIcon.Click += new System.EventHandler(this.pbMessageIcon_Click);
-            // 
             // gpLeftPanel
             // 
             this.gpLeftPanel.Angle = 0F;
@@ -228,6 +184,7 @@
             this.gpLeftPanel.Controls.Add(this.pbLogOut2);
             this.gpLeftPanel.Controls.Add(this.pbManageUser);
             this.gpLeftPanel.Controls.Add(this.pbCustomers);
+            this.gpLeftPanel.Controls.Add(this.pbSalesHistory);
             this.gpLeftPanel.Controls.Add(this.pbInventory);
             this.gpLeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.gpLeftPanel.Location = new System.Drawing.Point(20, 60);
@@ -295,64 +252,10 @@
             this.lbInventory.Text = "Inventory";
             this.lbInventory.Click += new System.EventHandler(this.lbInventory_Click);
             // 
-            // pbCompanyLogo
+            // notification
             // 
-            this.pbCompanyLogo.BackColor = System.Drawing.Color.Transparent;
-            this.pbCompanyLogo.Image = global::GlobalManagementSystemApp.Properties.Resources.KTM_S_Logo1;
-            this.pbCompanyLogo.Location = new System.Drawing.Point(18, -8);
-            this.pbCompanyLogo.Name = "pbCompanyLogo";
-            this.pbCompanyLogo.Size = new System.Drawing.Size(200, 152);
-            this.pbCompanyLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbCompanyLogo.TabIndex = 2;
-            this.pbCompanyLogo.TabStop = false;
-            // 
-            // pbLogOut
-            // 
-            this.pbLogOut.BackColor = System.Drawing.Color.Transparent;
-            this.pbLogOut.Image = global::GlobalManagementSystemApp.Properties.Resources.logout;
-            this.pbLogOut.Location = new System.Drawing.Point(1234, 27);
-            this.pbLogOut.Name = "pbLogOut";
-            this.pbLogOut.Size = new System.Drawing.Size(77, 50);
-            this.pbLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLogOut.TabIndex = 0;
-            this.pbLogOut.TabStop = false;
-            this.pbLogOut.Click += new System.EventHandler(this.pbLogOut_Click);
-            // 
-            // pbManageUser
-            // 
-            this.pbManageUser.BackColor = System.Drawing.Color.Transparent;
-            this.pbManageUser.Image = global::GlobalManagementSystemApp.Properties.Resources.manage_user;
-            this.pbManageUser.Location = new System.Drawing.Point(63, 582);
-            this.pbManageUser.Name = "pbManageUser";
-            this.pbManageUser.Size = new System.Drawing.Size(89, 85);
-            this.pbManageUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbManageUser.TabIndex = 0;
-            this.pbManageUser.TabStop = false;
-            this.pbManageUser.Click += new System.EventHandler(this.pbManageUser_Click);
-            // 
-            // pbCustomers
-            // 
-            this.pbCustomers.BackColor = System.Drawing.Color.Transparent;
-            this.pbCustomers.Image = global::GlobalManagementSystemApp.Properties.Resources.client;
-            this.pbCustomers.Location = new System.Drawing.Point(68, 448);
-            this.pbCustomers.Name = "pbCustomers";
-            this.pbCustomers.Size = new System.Drawing.Size(77, 50);
-            this.pbCustomers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbCustomers.TabIndex = 0;
-            this.pbCustomers.TabStop = false;
-            this.pbCustomers.Click += new System.EventHandler(this.pbCustomers_Click);
-            // 
-            // pbInventory
-            // 
-            this.pbInventory.BackColor = System.Drawing.Color.Transparent;
-            this.pbInventory.Image = global::GlobalManagementSystemApp.Properties.Resources.inventory;
-            this.pbInventory.Location = new System.Drawing.Point(65, 199);
-            this.pbInventory.Name = "pbInventory";
-            this.pbInventory.Size = new System.Drawing.Size(77, 50);
-            this.pbInventory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbInventory.TabIndex = 0;
-            this.pbInventory.TabStop = false;
-            this.pbInventory.Click += new System.EventHandler(this.pbInventory_Click);
+            this.notification.Text = "notifyIcon1";
+            this.notification.Visible = true;
             // 
             // gpCentrePanel
             // 
@@ -566,10 +469,74 @@
             this.monthCalendar1.TitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.monthCalendar1.TitleForeColor = System.Drawing.SystemColors.ButtonFace;
             // 
-            // notification
+            // pictureBox6
             // 
-            this.notification.Text = "notifyIcon1";
-            this.notification.Visible = true;
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::GlobalManagementSystemApp.Properties.Resources._26_268998_link_to_manage_travel_problem_solving_skills_icon;
+            this.pictureBox6.Location = new System.Drawing.Point(137, 46);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(77, 50);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pbuser
+            // 
+            this.pbuser.BackColor = System.Drawing.Color.Transparent;
+            this.pbuser.Image = global::GlobalManagementSystemApp.Properties.Resources.user;
+            this.pbuser.Location = new System.Drawing.Point(947, 12);
+            this.pbuser.Name = "pbuser";
+            this.pbuser.Size = new System.Drawing.Size(121, 84);
+            this.pbuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbuser.TabIndex = 0;
+            this.pbuser.TabStop = false;
+            // 
+            // pbLogOut
+            // 
+            this.pbLogOut.BackColor = System.Drawing.Color.Transparent;
+            this.pbLogOut.Image = global::GlobalManagementSystemApp.Properties.Resources.logout;
+            this.pbLogOut.Location = new System.Drawing.Point(1234, 27);
+            this.pbLogOut.Name = "pbLogOut";
+            this.pbLogOut.Size = new System.Drawing.Size(77, 50);
+            this.pbLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogOut.TabIndex = 0;
+            this.pbLogOut.TabStop = false;
+            this.pbLogOut.Click += new System.EventHandler(this.pbLogOut_Click);
+            // 
+            // pbNotificationIcon
+            // 
+            this.pbNotificationIcon.BackColor = System.Drawing.Color.Transparent;
+            this.pbNotificationIcon.Image = global::GlobalManagementSystemApp.Properties.Resources.notification1;
+            this.pbNotificationIcon.Location = new System.Drawing.Point(815, 27);
+            this.pbNotificationIcon.Name = "pbNotificationIcon";
+            this.pbNotificationIcon.Size = new System.Drawing.Size(77, 50);
+            this.pbNotificationIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbNotificationIcon.TabIndex = 0;
+            this.pbNotificationIcon.TabStop = false;
+            this.pbNotificationIcon.Click += new System.EventHandler(this.pbNotificationIcon_Click);
+            // 
+            // pbMessageIcon
+            // 
+            this.pbMessageIcon.BackColor = System.Drawing.Color.Transparent;
+            this.pbMessageIcon.Image = global::GlobalManagementSystemApp.Properties.Resources.Message1;
+            this.pbMessageIcon.Location = new System.Drawing.Point(668, 27);
+            this.pbMessageIcon.Name = "pbMessageIcon";
+            this.pbMessageIcon.Size = new System.Drawing.Size(77, 50);
+            this.pbMessageIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMessageIcon.TabIndex = 0;
+            this.pbMessageIcon.TabStop = false;
+            this.pbMessageIcon.Click += new System.EventHandler(this.pbMessageIcon_Click);
+            // 
+            // pbCompanyLogo
+            // 
+            this.pbCompanyLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pbCompanyLogo.Image = global::GlobalManagementSystemApp.Properties.Resources.KTM_S_Logo1;
+            this.pbCompanyLogo.Location = new System.Drawing.Point(18, -8);
+            this.pbCompanyLogo.Name = "pbCompanyLogo";
+            this.pbCompanyLogo.Size = new System.Drawing.Size(200, 152);
+            this.pbCompanyLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbCompanyLogo.TabIndex = 2;
+            this.pbCompanyLogo.TabStop = false;
             // 
             // pbLogOut2
             // 
@@ -582,6 +549,54 @@
             this.pbLogOut2.TabIndex = 0;
             this.pbLogOut2.TabStop = false;
             this.pbLogOut2.Click += new System.EventHandler(this.pbLogOut2_Click);
+            // 
+            // pbManageUser
+            // 
+            this.pbManageUser.BackColor = System.Drawing.Color.Transparent;
+            this.pbManageUser.Image = global::GlobalManagementSystemApp.Properties.Resources.manage_user;
+            this.pbManageUser.Location = new System.Drawing.Point(63, 582);
+            this.pbManageUser.Name = "pbManageUser";
+            this.pbManageUser.Size = new System.Drawing.Size(89, 85);
+            this.pbManageUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbManageUser.TabIndex = 0;
+            this.pbManageUser.TabStop = false;
+            this.pbManageUser.Click += new System.EventHandler(this.pbManageUser_Click);
+            // 
+            // pbCustomers
+            // 
+            this.pbCustomers.BackColor = System.Drawing.Color.Transparent;
+            this.pbCustomers.Image = global::GlobalManagementSystemApp.Properties.Resources.client;
+            this.pbCustomers.Location = new System.Drawing.Point(68, 448);
+            this.pbCustomers.Name = "pbCustomers";
+            this.pbCustomers.Size = new System.Drawing.Size(77, 50);
+            this.pbCustomers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCustomers.TabIndex = 0;
+            this.pbCustomers.TabStop = false;
+            this.pbCustomers.Click += new System.EventHandler(this.pbCustomers_Click);
+            // 
+            // pbInventory
+            // 
+            this.pbInventory.BackColor = System.Drawing.Color.Transparent;
+            this.pbInventory.Image = global::GlobalManagementSystemApp.Properties.Resources.inventory;
+            this.pbInventory.Location = new System.Drawing.Point(65, 199);
+            this.pbInventory.Name = "pbInventory";
+            this.pbInventory.Size = new System.Drawing.Size(77, 50);
+            this.pbInventory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbInventory.TabIndex = 0;
+            this.pbInventory.TabStop = false;
+            this.pbInventory.Click += new System.EventHandler(this.pbInventory_Click);
+            // 
+            // pbSalesHistory
+            // 
+            this.pbSalesHistory.BackColor = System.Drawing.Color.Transparent;
+            this.pbSalesHistory.Image = global::GlobalManagementSystemApp.Properties.Resources.transfer_hd;
+            this.pbSalesHistory.Location = new System.Drawing.Point(65, 317);
+            this.pbSalesHistory.Name = "pbSalesHistory";
+            this.pbSalesHistory.Size = new System.Drawing.Size(77, 50);
+            this.pbSalesHistory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSalesHistory.TabIndex = 0;
+            this.pbSalesHistory.TabStop = false;
+            this.pbSalesHistory.Click += new System.EventHandler(this.pbSalesHistory_Click);
             // 
             // Dashboard
             // 
@@ -600,17 +615,8 @@
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.gpTopPanel.ResumeLayout(false);
             this.gpTopPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbuser)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNotificationIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMessageIcon)).EndInit();
             this.gpLeftPanel.ResumeLayout(false);
             this.gpLeftPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCompanyLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogOut)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbManageUser)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCustomers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbInventory)).EndInit();
             this.gpCentrePanel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -625,7 +631,17 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlideShow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbuser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogOut)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNotificationIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMessageIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCompanyLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogOut2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbManageUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCustomers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbInventory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSalesHistory)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -675,6 +691,7 @@
         private System.Windows.Forms.Label lbSalesHistory;
         private System.Windows.Forms.NotifyIcon notification;
         private System.Windows.Forms.PictureBox pbLogOut2;
+        private System.Windows.Forms.PictureBox pbSalesHistory;
     }
 }
 
