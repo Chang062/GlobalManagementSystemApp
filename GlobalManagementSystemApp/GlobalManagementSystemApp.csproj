@@ -318,7 +318,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Gms_Db.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Global_Management_System.bak" />
+    <None Include="GMS_Database.bak" />
     <None Include="Gms_Db.edmx.diagram">
       <DependentUpon>Gms_Db.edmx</DependentUpon>
     </None>
